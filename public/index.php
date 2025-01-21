@@ -1,10 +1,12 @@
 <?php
-
 session_start();
+
+
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
     if ($num == 60) {
         $_SESSION['page'] = 2;
+        header("Location:page-2.php");
     } else {
         echo "Noto'g'ri hisoblangan!";
     }
@@ -28,7 +30,7 @@ if (isset($_GET['sum'])) {
 
     <h3>15 + 45 = </h3>
 
-    <form action="#" method="get">
+    <form action="" method="get">
         <input type="text" name="sum">
         <input type="submit" value="Send">
     </form>
