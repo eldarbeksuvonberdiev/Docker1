@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
@@ -30,7 +31,7 @@ if ($_SESSION['page-4']) { ?>
 
         <h3>
             <?php
-            echo $_SESSION['page'] + $_SESSION['page-2'] + $_SESSION['page-3'] + $_SESSION['page-4'];
+            echo $_SESSION['page'] . '+' . $_SESSION['page-2'] . '+' . $_SESSION['page-3'] . '+' . $_SESSION['page-4'];
             ?>
         </h3>
 

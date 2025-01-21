@@ -1,20 +1,19 @@
 <?php
+session_start();
+
 
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
     if ($num == 30) {
-        $_SESSION['page-2'] = 2;
+        $_SESSION['page-2'] = 30;
         header("Location:page-3.php");
     } else {
         echo "Noto'g'ri hisoblangan!";
     }
 }
-
-
-
 ?>
 <?php
-if ($_SESSION['page']) { ?>
+if (isset($_SESSION['page'])) { ?>
     <!DOCTYPE html>
     <html lang="en">
 

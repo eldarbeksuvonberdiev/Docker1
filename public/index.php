@@ -1,11 +1,10 @@
 <?php
 session_start();
-
-
+// session_destroy();
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
     if ($num == 60) {
-        $_SESSION['page'] = 2;
+        $_SESSION['page'] = 60;
         header("Location:page-2.php");
     } else {
         echo "Noto'g'ri hisoblangan!";

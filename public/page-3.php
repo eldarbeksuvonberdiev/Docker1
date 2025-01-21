@@ -1,9 +1,10 @@
 <?php
+session_start();
 
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
     if ($num == 3) {
-        $_SESSION['page-3'] = 2;
+        $_SESSION['page-3'] = 3;
         header("Location:page-4.php");
     } else {
         echo "Noto'g'ri hisoblangan!";
