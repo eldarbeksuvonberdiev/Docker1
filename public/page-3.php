@@ -13,7 +13,7 @@ if (isset($_GET['sum'])) {
 
 ?>
 <?php
-if ($_SESSION['page-2']) { ?>
+if (isset($_SESSION['page-2'])) { ?>
     <!DOCTYPE html>
     <html lang="en">
 

@@ -4,8 +4,8 @@ session_start();
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
     if ($num == 768) {
-        echo "Barakalla!";
         session_destroy();
+        echo "Barakalla!";
     } else {
         echo "Noto'g'ri hisoblangan!";
     }
@@ -13,7 +13,7 @@ if (isset($_GET['sum'])) {
 
 ?>
 <?php
-if ($_SESSION['page-4']) { ?>
+if (isset($_SESSION['page-4'])) { ?>
     <!DOCTYPE html>
     <html lang="en">
 

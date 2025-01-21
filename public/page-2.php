@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 if (isset($_GET['sum'])) {
     $num = $_GET['sum'];
     if ($num == 30) {
